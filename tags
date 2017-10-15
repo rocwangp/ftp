@@ -1,0 +1,119 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC := g++$/;"	m
+CEpoll	epoll.cpp	/^CEpoll::CEpoll() :$/;"	f	class:CEpoll
+CEpoll	epoll.h	/^class CEpoll$/;"	c
+CFTPClient	ftp_client.cpp	/^CFTPClient::CFTPClient()$/;"	f	class:CFTPClient
+CFTPClient	ftp_client.h	/^class CFTPClient$/;"	c
+CFTPServer	ftp_server.cpp	/^CFTPServer::CFTPServer()$/;"	f	class:CFTPServer
+CFTPServer	ftp_server.h	/^class CFTPServer$/;"	c
+CONTROL_PORT	constant.h	/^static const int CONTROL_PORT = 5200;$/;"	v
+CSocket	socket.cpp	/^CSocket::CSocket(int fd) :$/;"	f	class:CSocket
+CSocket	socket.h	/^class CSocket$/;"	c
+CXXFLAGS	Makefile	/^CXXFLAGS := -g -Wall -D_REENTRANT$/;"	m
+DATA_PORT	constant.h	/^static const int DATA_PORT = 5210;$/;"	v
+FTP_COMMAND	constant.h	/^enum FTP_COMMAND$/;"	g
+FTP_COMMAND_CWD	constant.h	/^    FTP_COMMAND_CWD,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_LIST	constant.h	/^    FTP_COMMAND_LIST$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_PASSWORD	constant.h	/^    FTP_COMMAND_PASSWORD,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_PASV	constant.h	/^    FTP_COMMAND_PASV,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_PWD	constant.h	/^    FTP_COMMAND_PWD,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_RETR	constant.h	/^    FTP_COMMAND_RETR,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_SIZE	constant.h	/^    FTP_COMMAND_SIZE,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_STOR	constant.h	/^    FTP_COMMAND_STOR,$/;"	e	enum:FTP_COMMAND
+FTP_COMMAND_USERNAME	constant.h	/^    FTP_COMMAND_USERNAME,$/;"	e	enum:FTP_COMMAND
+FTP_DEFAULT_BUFFER	constant.h	/^static const int FTP_DEFAULT_BUFFER = 1024;$/;"	v
+INCLUDE	Makefile	/^INCLUDE := -I.\/$/;"	m
+LIBS	Makefile	/^LIBS := -lpthread$/;"	m
+MAX_EPOLL_NUMBER	constant.h	/^static const int MAX_EPOLL_NUMBER = 10;$/;"	v
+MAX_LISTEN_NUMBER	constant.h	/^static const int MAX_LISTEN_NUMBER = 10;$/;"	v
+OBJECT1	Makefile	/^OBJECT1 := socket.o epoll.o ftp_server.o server.o$/;"	m
+OBJECT2	Makefile	/^OBJECT2 := socket.o ftp_client.o client.o$/;"	m
+RESPONSE_CWD_SUCCESS	constant.h	/^static const std::string RESPONSE_CWD_SUCCESS = "250 Command okay.";$/;"	v
+RESPONSE_PASS_SUCCESS	constant.h	/^static const std::string RESPONSE_PASS_SUCCESS = "230 User logged in, proceed.";$/;"	v
+RESPONSE_PASV_SUCCESS	constant.h	/^static const std::string RESPONSE_PASV_SUCCESS = "227 Entering passive mode";$/;"	v
+RESPONSE_QUIT_SUCCESS	constant.h	/^static const std::string RESPONSE_QUIT_SUCCESS = "200 Closes connection.";$/;"	v
+RESPONSE_RETR_SUCCESS	constant.h	/^static const std::string RESPONSE_RETR_SUCCESS = "150 Opening data connection.";$/;"	v
+RESPONSE_SIZE_SUCCESS	constant.h	/^static const std::string RESPONSE_SIZE_SUCCESS = "213";$/;"	v
+RESPONSE_USER_SUCCESS	constant.h	/^static const std::string RESPONSE_USER_SUCCESS = "331 User name okay, need password.";$/;"	v
+RESPONSE_WELCOME	constant.h	/^static const std::string RESPONSE_WELCOME = "welcome to use ftp";$/;"	v
+TARGET1	Makefile	/^TARGET1 := server$/;"	m
+TARGET2	Makefile	/^TARGET2 := client$/;"	m
+accept_socket	socket.cpp	/^int CSocket::accept_socket()$/;"	f	class:CSocket
+add_event	epoll.cpp	/^bool CEpoll::add_event(int fd, unsigned int events)$/;"	f	class:CEpoll
+bind_socket	socket.cpp	/^bool CSocket::bind_socket(const std::string& ip, int port)$/;"	f	class:CSocket
+change_work_directory	ftp_client.cpp	/^bool CFTPClient::change_work_directory(const std::string& dirname)$/;"	f	class:CFTPClient
+close_epoll	epoll.cpp	/^bool CEpoll::close_epoll()$/;"	f	class:CEpoll
+close_epoll	ftp_server.cpp	/^bool CFTPServer::close_epoll()$/;"	f	class:CFTPServer
+close_socket	ftp_server.cpp	/^bool CFTPServer::close_socket()$/;"	f	class:CFTPServer
+close_socket	socket.cpp	/^bool CSocket::close_socket()$/;"	f	class:CSocket
+connect_socket	socket.cpp	/^bool CSocket::connect_socket(const std::string& ip, int port)$/;"	f	class:CSocket
+create_epoll	epoll.cpp	/^bool CEpoll::create_epoll()$/;"	f	class:CEpoll
+create_epoll	ftp_server.cpp	/^bool CFTPServer::create_epoll()$/;"	f	class:CFTPServer
+create_socket	ftp_server.cpp	/^bool CFTPServer::create_socket()$/;"	f	class:CFTPServer
+create_socket	socket.cpp	/^bool CSocket::create_socket()$/;"	f	class:CSocket
+delete_event	epoll.cpp	/^bool CEpoll::delete_event(int fd, unsigned int events)$/;"	f	class:CEpoll
+download	ftp_client.cpp	/^bool CFTPClient::download(const std::string& filename)$/;"	f	class:CFTPClient
+epoll_wait	epoll.cpp	/^int CEpoll::epoll_wait(int timeout)$/;"	f	class:CEpoll
+get_events	epoll.cpp	/^int CEpoll::get_events(int idx)$/;"	f	class:CEpoll
+get_fd	epoll.cpp	/^int CEpoll::get_fd(int idx)$/;"	f	class:CEpoll
+get_fd	socket.h	/^    int get_fd() { return m_sockfd; }$/;"	f	class:CSocket
+get_filesize	ftp_client.cpp	/^bool CFTPClient::get_filesize(const std::string& filename)$/;"	f	class:CFTPClient
+handle	ftp_server.cpp	/^void CFTPServer::handle(int)$/;"	f	class:CFTPServer
+input_password	ftp_client.cpp	/^void CFTPClient::input_password(const std::string& password)$/;"	f	class:CFTPClient
+input_username	ftp_client.cpp	/^void CFTPClient::input_username(const std::string& username)$/;"	f	class:CFTPClient
+list_file	ftp_client.cpp	/^bool CFTPClient::list_file(const std::string& dirname)$/;"	f	class:CFTPClient
+listen_socket	socket.cpp	/^bool CSocket::listen_socket(int listen_number)$/;"	f	class:CSocket
+login_server	ftp_client.cpp	/^void CFTPClient::login_server(const std::string& host)$/;"	f	class:CFTPClient
+m_client_socket	ftp_server.h	/^    CSocket m_client_socket;$/;"	m	class:CFTPServer
+m_control_listen_socket	ftp_server.h	/^    CSocket m_control_listen_socket;$/;"	m	class:CFTPServer
+m_control_socket	ftp_client.h	/^    CSocket m_control_socket;$/;"	m	class:CFTPClient
+m_control_socket	ftp_server.h	/^    CSocket m_control_socket;$/;"	m	class:CFTPServer
+m_data_listen_socket	ftp_server.h	/^    CSocket m_data_listen_socket;$/;"	m	class:CFTPServer
+m_data_socket	ftp_client.h	/^    CSocket m_data_socket;$/;"	m	class:CFTPClient
+m_data_socket	ftp_server.h	/^    CSocket m_data_socket;$/;"	m	class:CFTPServer
+m_epoll	ftp_server.h	/^    CEpoll m_epoll; $/;"	m	class:CFTPServer
+m_epoll_events	epoll.h	/^    struct epoll_event m_epoll_events[MAX_EPOLL_NUMBER];$/;"	m	class:CEpoll	typeref:struct:CEpoll::epoll_event
+m_epollfd	epoll.h	/^    int m_epollfd;$/;"	m	class:CEpoll
+m_fd_number	epoll.h	/^    int m_fd_number;$/;"	m	class:CEpoll
+m_fd_queue	ftp_server.h	/^    std::queue<int> m_fd_queue;$/;"	m	class:CFTPServer
+m_servAddr	ftp_client.h	/^    struct sockaddr_in m_servAddr;$/;"	m	class:CFTPClient	typeref:struct:CFTPClient::sockaddr_in
+m_sockfd	socket.h	/^    int m_sockfd;$/;"	m	class:CSocket
+main	client.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	server.cpp	/^int main()$/;"	f
+modify_event	epoll.cpp	/^bool CEpoll::modify_event(int fd, unsigned int events)$/;"	f	class:CEpoll
+parse_command	ftp_client.cpp	/^std::string CFTPClient::parse_command(int control, const std::string& argument)$/;"	f	class:CFTPClient
+print_work_directory	ftp_client.cpp	/^bool CFTPClient::print_work_directory()$/;"	f	class:CFTPClient
+process_command	ftp_server.cpp	/^void CFTPServer::process_command(int fd)$/;"	f	class:CFTPServer
+process_cwd_command	ftp_server.cpp	/^void CFTPServer::process_cwd_command(const std::string& dirname)$/;"	f	class:CFTPServer
+process_list_command	ftp_server.cpp	/^void CFTPServer::process_list_command(std::string& dirname)$/;"	f	class:CFTPServer
+process_pass_command	ftp_server.cpp	/^void CFTPServer::process_pass_command(const std::string& password)$/;"	f	class:CFTPServer
+process_pasv_command	ftp_server.cpp	/^void CFTPServer::process_pasv_command()$/;"	f	class:CFTPServer
+process_port_command	ftp_server.cpp	/^void CFTPServer::process_port_command(const std::string& addr_and_port)$/;"	f	class:CFTPServer
+process_pwd_command	ftp_server.cpp	/^void CFTPServer::process_pwd_command()$/;"	f	class:CFTPServer
+process_quit_command	ftp_server.cpp	/^void CFTPServer::process_quit_command()$/;"	f	class:CFTPServer
+process_retr_command	ftp_server.cpp	/^void CFTPServer::process_retr_command(const std::string& filename)$/;"	f	class:CFTPServer
+process_size_command	ftp_server.cpp	/^void CFTPServer::process_size_command(const std::string& filename)$/;"	f	class:CFTPServer
+process_stor_command	ftp_server.cpp	/^void CFTPServer::process_stor_command(const std::string& filename)$/;"	f	class:CFTPServer
+process_user_command	ftp_server.cpp	/^void CFTPServer::process_user_command(const std::string& username)$/;"	f	class:CFTPServer
+quit_server	ftp_client.cpp	/^void CFTPClient::quit_server(void)$/;"	f	class:CFTPClient
+recv_client_command	ftp_server.cpp	/^std::string CFTPServer::recv_client_command(CSocket *client_socket)$/;"	f	class:CFTPServer
+recv_message	socket.cpp	/^int CSocket::recv_message(std::string& message)$/;"	f	class:CSocket
+recv_response	ftp_client.cpp	/^bool CFTPClient::recv_response(std::string& response)$/;"	f	class:CFTPClient
+run	ftp_server.cpp	/^void CFTPServer::run()$/;"	f	class:CFTPServer
+send_command	ftp_client.cpp	/^bool CFTPClient::send_command(const std::string& command)$/;"	f	class:CFTPClient
+send_message	socket.cpp	/^int CSocket::send_message(const std::string& message)$/;"	f	class:CSocket
+send_recv_message	ftp_client.cpp	/^bool CFTPClient::send_recv_message(const std::string& control)$/;"	f	class:CFTPClient
+set_fd	socket.h	/^    void set_fd(int fd) { m_sockfd = fd; }$/;"	f	class:CSocket
+set_pasv_mode	ftp_client.cpp	/^bool CFTPClient::set_pasv_mode()$/;"	f	class:CFTPClient
+set_socket_blocking	socket.cpp	/^bool CSocket::set_socket_blocking()$/;"	f	class:CSocket
+set_socket_nonblocking	socket.cpp	/^bool CSocket::set_socket_nonblocking()$/;"	f	class:CSocket
+store	ftp_client.cpp	/^bool CFTPClient::store(const std::string& filename)$/;"	f	class:CFTPClient
+~CEpoll	epoll.cpp	/^CEpoll::~CEpoll()$/;"	f	class:CEpoll
+~CFTPClient	ftp_client.cpp	/^CFTPClient::~CFTPClient()$/;"	f	class:CFTPClient
+~CFTPServer	ftp_server.cpp	/^CFTPServer::~CFTPServer()$/;"	f	class:CFTPServer
+~CSocket	socket.cpp	/^CSocket::~CSocket()$/;"	f	class:CSocket
