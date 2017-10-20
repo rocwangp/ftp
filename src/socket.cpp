@@ -1,4 +1,4 @@
-#include "socket.h"
+#include "../inc/socket.h"
 #include <iostream>
 
 CSocket::CSocket(int fd) :
@@ -24,14 +24,16 @@ bool CSocket::create_socket()
 
 bool CSocket::close_socket()
 {
+    int close_ret = 0;
     if(m_sockfd)
     {
-        if(close(m_sockfd) < 0)
-            return false;
-        else
-            return true;
+        close_ret = close(m_sockfd);
     }
-    return true;
+    m_sockfd = -1;
+    if(close_ret < 0)
+        return false;
+    else 
+        return true;
 }
 
 
@@ -107,27 +109,20 @@ int CSocket::recv_message(std::string& message)
     char msg[FTP_DEFAULT_BUFFER];
     bzero(msg, sizeof(msg));
     
-    message.clear();
-    
-    while(true)
+    int n = recv(m_sockfd, msg, sizeof(msg), 0);
+    if(n < 0)
+    { 
+        return -1;
+    }
+    else if(n == 0)
     {
-        std::cout << "recv..." << std::endl;
-        int n = recv(m_sockfd, msg, sizeof(msg), 0);
-        if(n < 0)
-        { 
-            return -1;
-        }
-        else if(n == 0)
-        {
-           return 0;
-        }
-        else
-        {
-            msg[n] = '\0';
-            message += msg;
-            std::cout << n << std::endl;
-            return n;
-        }
+       return 0;
+    }
+    else
+    {
+        message.assign(msg, n); 
+
+        return n;
     }
 }
 

@@ -1,4 +1,4 @@
-#include "ftp_client.h"
+#include "../inc/ftp_client.h"
 
 #include <iostream>
 #include <sstream>
@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
     std::stringstream oss;
     while(true)
     {
+        command.clear();
+        argument.clear();
         getline(std::cin, command);
         oss.str("");
         oss.clear();
@@ -37,6 +39,10 @@ int main(int argc, char *argv[])
         else if(command == "PASV")
         {
             ftp.set_pasv_mode();
+        }
+        else if(command == "PORT")
+        {
+            ftp.set_port_mode();
         }
         else if(command == "LIST")
         {
@@ -66,6 +72,10 @@ int main(int argc, char *argv[])
         else if(command == "SIZE")
         {
             ftp.get_filesize(argument);
+        }
+        else if(command == "REST")
+        {
+            ftp.continue_download(argument);
         }
     }
     return 0;

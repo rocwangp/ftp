@@ -1,0 +1,130 @@
+Fri Oct 20 17:10:21 2017 ftp server start running
+Fri Oct 20 17:10:21 2017 set SIGINT signal handle success
+Fri Oct 20 17:10:33 2017 find active client fd is 3
+Fri Oct 20 17:10:33 2017 accept control connection from client 5
+Fri Oct 20 17:10:34 2017 find active client fd is 5
+Fri Oct 20 17:10:34 2017 start process client command 5
+Fri Oct 20 17:10:34 2017 recv command from client, command isPWD
+
+Fri Oct 20 17:10:34 2017 parse client command success
+Fri Oct 20 17:10:34 2017 current workdir is /home/roc/unix/ftp 5
+Fri Oct 20 17:10:37 2017 find active client fd is 5
+Fri Oct 20 17:10:37 2017 start process client command 5
+Fri Oct 20 17:10:37 2017 recv command from client, command isCWD /home/roc
+
+Fri Oct 20 17:10:37 2017 parse client command success
+Fri Oct 20 17:10:37 2017 change workdir success, current workdir is /home/roc 5
+Fri Oct 20 17:10:40 2017 find active client fd is 5
+Fri Oct 20 17:10:40 2017 start process client command 5
+Fri Oct 20 17:10:40 2017 recv command from client, command isPASV
+
+Fri Oct 20 17:10:40 2017 parse client command success
+Fri Oct 20 17:10:40 2017 create listen listen success
+Fri Oct 20 17:10:40 2017 send response to client : (127,0,0,1,20,90) 5
+Fri Oct 20 17:10:40 2017 find active client fd is 6
+Fri Oct 20 17:10:40 2017 accept data connection from client 7
+Fri Oct 20 17:10:42 2017 find active client fd is 5
+Fri Oct 20 17:10:42 2017 start process client command 5
+Fri Oct 20 17:10:42 2017 recv command from client, command isSIZE tcp.pdf
+
+Fri Oct 20 17:10:42 2017 parse client command success
+Fri Oct 20 17:10:42 2017 41353405 5
+Fri Oct 20 17:10:42 2017 find active client fd is 5
+Fri Oct 20 17:10:42 2017 start process client command 5
+Fri Oct 20 17:10:42 2017 recv command from client, command isRETR tcp.pdf
+
+Fri Oct 20 17:10:42 2017 parse client command success
+Fri Oct 20 17:10:42 2017 open a thread to send file 5
+Fri Oct 20 17:10:42 2017 filepath is : /home/roc/tcp.pdf 5
+Fri Oct 20 17:10:42 2017 send file over 5
+Fri Oct 20 17:10:57 2017 find active client fd is 5
+Fri Oct 20 17:10:57 2017 start process client command 5
+Fri Oct 20 17:10:57 2017 recv command from client, command isSTOR tcp.pdf<41353405>
+
+Fri Oct 20 17:10:57 2017 parse client command success
+Fri Oct 20 17:10:57 2017 open file success 5
+Fri Oct 20 17:10:57 2017 store file over 5
+Fri Oct 20 17:11:07 2017 find active client fd is 5
+Fri Oct 20 17:11:07 2017 start process client command 5
+Fri Oct 20 17:11:07 2017 recv command from client, command isPORT 127,0,0,1,183,149
+
+Fri Oct 20 17:11:07 2017 parse client command success
+Fri Oct 20 17:11:07 2017 client ip and port is 127.0.0.1 46997 5
+Fri Oct 20 17:11:07 2017 close pasv pattern 5
+Fri Oct 20 17:11:07 2017 convert port pattern success 5
+Fri Oct 20 17:11:11 2017 find active client fd is 5
+Fri Oct 20 17:11:11 2017 start process client command 5
+Fri Oct 20 17:11:11 2017 recv command from client, command isSIZE tcp.pdf
+
+Fri Oct 20 17:11:11 2017 parse client command success
+Fri Oct 20 17:11:11 2017 41353405 5
+Fri Oct 20 17:11:11 2017 find active client fd is 5
+Fri Oct 20 17:11:11 2017 start process client command 5
+Fri Oct 20 17:11:11 2017 recv command from client, command isRETR tcp.pdf
+
+Fri Oct 20 17:11:11 2017 parse client command success
+Fri Oct 20 17:11:11 2017 open a thread to send file 5
+Fri Oct 20 17:11:11 2017 filepath is : /home/roc/tcp.pdf 5
+Fri Oct 20 17:11:11 2017 send file over 5
+Fri Oct 20 17:11:23 2017 find active client fd is 5
+Fri Oct 20 17:11:23 2017 start process client command 5
+Fri Oct 20 17:11:23 2017 recv command from client, command isSTOR tcp.pdf<41353405>
+
+Fri Oct 20 17:11:23 2017 parse client command success
+Fri Oct 20 17:11:23 2017 open file success 5
+Fri Oct 20 17:11:23 2017 store file over 5
+Fri Oct 20 17:11:37 2017 find active client fd is 3
+Fri Oct 20 17:11:37 2017 accept control connection from client 7
+Fri Oct 20 17:11:38 2017 find active client fd is 7
+Fri Oct 20 17:11:38 2017 start process client command 7
+Fri Oct 20 17:11:38 2017 recv command from client, command isPWD
+
+Fri Oct 20 17:11:38 2017 parse client command success
+Fri Oct 20 17:11:38 2017 current workdir is /home/roc/unix/ftp 7
+Fri Oct 20 17:11:40 2017 find active client fd is 7
+Fri Oct 20 17:11:40 2017 start process client command 7
+Fri Oct 20 17:11:40 2017 recv command from client, command isCWD /home/roc
+
+Fri Oct 20 17:11:40 2017 parse client command success
+Fri Oct 20 17:11:40 2017 change workdir success, current workdir is /home/roc 7
+Fri Oct 20 17:11:43 2017 find active client fd is 7
+Fri Oct 20 17:11:43 2017 start process client command 7
+Fri Oct 20 17:11:43 2017 recv command from client, command isPASV
+
+Fri Oct 20 17:11:43 2017 parse client command success
+Fri Oct 20 17:11:43 2017 send response to client : (127,0,0,1,20,90) 7
+Fri Oct 20 17:11:43 2017 find active client fd is 6
+Fri Oct 20 17:11:43 2017 accept data connection from client 9
+Fri Oct 20 17:11:46 2017 find active client fd is 7
+Fri Oct 20 17:11:46 2017 start process client command 7
+Fri Oct 20 17:11:46 2017 recv command from client, command isSIZE tcp.pdf
+
+Fri Oct 20 17:11:46 2017 parse client command success
+Fri Oct 20 17:11:46 2017 41353405 7
+Fri Oct 20 17:11:46 2017 find active client fd is 7
+Fri Oct 20 17:11:46 2017 start process client command 7
+Fri Oct 20 17:11:46 2017 recv command from client, command isRETR tcp.pdf
+
+Fri Oct 20 17:11:46 2017 parse client command success
+Fri Oct 20 17:11:46 2017 open a thread to send file 7
+Fri Oct 20 17:11:46 2017 filepath is : /home/roc/tcp.pdf 7
+Fri Oct 20 17:11:46 2017 send file over 7
+Fri Oct 20 17:11:57 2017 find active client fd is 7
+Fri Oct 20 17:11:57 2017 start process client command 7
+Fri Oct 20 17:11:57 2017 recv command from client, command isSTOR tcp.pdf<41353405>
+
+Fri Oct 20 17:11:57 2017 parse client command success
+Fri Oct 20 17:11:57 2017 open file success 7
+Fri Oct 20 17:11:57 2017 store file over 7
+Fri Oct 20 17:12:04 2017 find active client fd is 7
+Fri Oct 20 17:12:04 2017 start process client command 7
+Fri Oct 20 17:12:04 2017 recv command from client, command isQUIT
+
+Fri Oct 20 17:12:04 2017 parse client command success
+Fri Oct 20 17:12:04 2017 client quit 7
+Fri Oct 20 17:12:06 2017 find active client fd is 5
+Fri Oct 20 17:12:06 2017 start process client command 5
+Fri Oct 20 17:12:06 2017 recv command from client, command isQUIT
+
+Fri Oct 20 17:12:06 2017 parse client command success
+Fri Oct 20 17:12:06 2017 client quit 5

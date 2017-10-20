@@ -1,4 +1,4 @@
-#include "epoll.h"
+#include "../inc/epoll.h"
 
 CEpoll::CEpoll() :
     m_fd_number(0)
